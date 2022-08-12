@@ -32,6 +32,7 @@ const SinglePageProductScreen = () => {
         <ProductRating value={4.5} />
         <HStack space={2} alignItems="center" my={5}>
           <NumericInput
+            onChange={(e) => setValue(e)}
             value={value}
             totalWidth={140}
             totalHeight={30}
