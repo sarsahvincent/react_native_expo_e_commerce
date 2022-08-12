@@ -1,10 +1,10 @@
-const data = [
+export const products = [
   {
     id: 1,
     countInstock: 23,
     rating: 2,
     numReviews: 62,
-    name: "iPhone 12 Pro",
+    name: "iPhone 12 Pro Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     desc: "6.1-inch display",
     price: 799,
     description:
@@ -16,9 +16,9 @@ const data = [
   {
     id: 2,
     countInstock: 30,
-    rating: 4.4,
+    rating: 4.5,
     numReviews: 10,
-    name: "Galaxy S",
+    name: "Galaxy S Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     desc: "6.5-inch display",
     price: 399,
     description:
@@ -31,7 +31,7 @@ const data = [
     countInstock: 100,
     rating: 4,
     numReviews: 52,
-    name: "iPhone 12",
+    name: "iPhone 12 Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     desc: "5.4-inch display",
     price: 699,
     description:
@@ -44,7 +44,7 @@ const data = [
     countInstock: 3,
     rating: 3,
     numReviews: 12,
-    name: "Techno Spark 4",
+    name: "Techno Spark 4 Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     desc: "5.4-inch display",
     price: 299,
     description:
@@ -57,7 +57,7 @@ const data = [
     countInstock: 45,
     rating: 3.5,
     numReviews: 10,
-    name: "Huawie Mate 4 Pro",
+    name: "Huawie Mate 4 Pro Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     desc: "6.5-inch display",
     price: 399,
     description:
@@ -70,7 +70,7 @@ const data = [
     countInstock: 3,
     rating: 3,
     numReviews: 12,
-    name: "Xiaomi Note 10",
+    name: "Xiaomi Note 10 Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     desc: "6.1-inch display",
     price: 699,
     description:
@@ -83,7 +83,7 @@ const data = [
     countInstock: 105,
     rating: 3,
     numReviews: 22,
-    name: "Techno Camom 12",
+    name: "Techno Camom 12 Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     desc: "6.3-inch display",
     price: 929,
     description:
@@ -96,7 +96,7 @@ const data = [
     countInstock: 25,
     rating: 4,
     numReviews: 45,
-    name: "Techno Spark 5 Air",
+    name: "Techno Spark 5 Air Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     desc: "6.3-inch display",
     price: 589,
     description:
@@ -109,7 +109,7 @@ const data = [
     countInstock: 106,
     rating: 3,
     numReviews: 67,
-    name: "Noki 5.3",
+    name: "Noki 5.3 Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     desc: "6.2-inch display",
     price: 911,
     description:
@@ -122,7 +122,7 @@ const data = [
     countInstock: 234,
     rating: 3.5,
     numReviews: 92,
-    name: "Huawei Nova 8 SE",
+    name: "Huawei Nova 8 SE Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     desc: "6.5-inch display",
     price: 879,
     description:
@@ -135,7 +135,7 @@ const data = [
     countInstock: 233,
     rating: 2.5,
     numReviews: 12,
-    name: "Infinix Hot 8",
+    name: "Infinix Hot 8 Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     desc: "6.5-inch display",
     price: 329,
     description:
@@ -148,7 +148,7 @@ const data = [
     countInstock: 300,
     rating: 3,
     numReviews: 62,
-    name: "Galaxy Fold",
+    name: "Galaxy Fold Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     desc: "6.2-inch display",
     price: 1999,
     description:
@@ -161,7 +161,7 @@ const data = [
     countInstock: 3,
     rating: 3,
     numReviews: 12,
-    name: "Galaxy Note 10",
+    name: "Galaxy Note 10 Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
     desc: "6.8-inch display",
     price: 1999,
     description:

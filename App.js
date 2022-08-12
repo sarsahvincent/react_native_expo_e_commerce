@@ -1,6 +1,5 @@
 import HomeScreen from "./src/Screens/HomeScreen";
-import { Box, HStack, NativeBaseProvider } from "native-base";
-import Colors from "./src/data/colors";
+import { NativeBaseProvider } from "native-base";
 
 export default function App() {
   return (
