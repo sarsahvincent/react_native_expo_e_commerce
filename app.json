@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "react_native_expo_e_commerce",
-    "slug": "react_native_expo_e_commerce",
+    "name": "Algo Phones",
+    "slug": "algo_phones_shop",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/loading.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FF7F00"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -21,8 +21,8 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/algo.png",
+        "backgroundColor": "#FF7F00"
       }
     },
     "web": {
