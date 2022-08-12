@@ -1,12 +1,16 @@
 import { StyleSheet } from "react-native";
 import React from "react";
-import { NativeBaseProvider, Text, Box } from "native-base";
+import { Text, HStack, Box } from "native-base";
+import HomeSearch from "../Components/HomeSearch";
+import HomeProducts from "../Components/HomeProducts";
+import Colors from "../data/colors";
 
 const HomeScreen = () => {
   return (
-    <NativeBaseProvider>
-      <Text>HomeScreen</Text>
-    </NativeBaseProvider>
+    <Box flex={1} F bg={Colors.subGreen}>
+      <HomeSearch />
+      <HomeProducts />
+    </Box>
   );
 };
 
