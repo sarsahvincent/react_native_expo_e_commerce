@@ -70,7 +70,7 @@ const RegisterScreen = () => {
           SIGN UP
         </Button>
         <Pressable mt="4">
-          <Text color={Colors.deepestGray}>LOGIN</Text>
+          <Text color={Colors.deepestYellow}>LOGIN</Text>
         </Pressable>
       </Box>
     </Box>

@@ -7,7 +7,7 @@ const Colors = {
   grey: "#f4f4f4",
   red: "#ff0000",
   subYellow: "#fff2e6",
-  deepestGray: "#c4c4c4",
+  deepestYellow: "#ffe6cc",
   blue: "#3887f9",
   underline: "#e5e5e5",
   payal: "#ffb730",

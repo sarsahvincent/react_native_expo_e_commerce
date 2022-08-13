@@ -61,7 +61,7 @@ const LoginScreen = () => {
           Login
         </Button>
         <Pressable mt='4'>
-          <Text color={Colors.deepestGray}>Sign up</Text>
+          <Text color={Colors.deepestYellow}>Sign up</Text>
         </Pressable>
       </Box>
     </Box>
