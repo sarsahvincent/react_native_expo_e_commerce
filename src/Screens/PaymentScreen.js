@@ -4,9 +4,9 @@ import React from "react";
 
 const PaymentScreen = () => {
   return (
-    <NativeBaseProvider>
+    <Box>
       <Text>PaymentScreen</Text>
-    </NativeBaseProvider>
+    </Box>
   );
 };
 
