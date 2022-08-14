@@ -16,7 +16,6 @@ import Review from "../Components/Review";
 
 const SinglePageProductScreen = ({ route, navigation }) => {
   const { product } = route.params;
-  console.log("product", product);
   const [value, setValue] = useState(0);
   return (
     <Box safeAreaTop flex={1} bg={Colors.white}>

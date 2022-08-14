@@ -8,6 +8,7 @@ import {
   Pressable,
   Image,
 } from "native-base";
+import { useNavigation } from "@react-navigation/native";
 import React, { useState } from "react";
 import CustomButton from "./CustomButton";
 import Colors from "../data/colors";
@@ -35,6 +36,8 @@ const OrdersInfo = [
   },
 ];
 const OrderModal = () => {
+  const navigation = useNavigation();
+
   const [showModal, setShowModal] = useState(false);
   return (
     <Center>
@@ -100,12 +103,16 @@ const OrderModal = () => {
               w="full"
               bg={Colors.black}
               h={45}
-              onPress={() => setShowModal(false)}
+              onPress={() => {
+                navigation.navigate("Home");
+
+                setShowModal(false);
+              }}
               _pressed={{
                 bg: Colors.black,
               }}
             >
-              PLACE AN ORDER
+              PAY LATER
             </Button>
           </Modal.Footer>
         </Modal.Content>

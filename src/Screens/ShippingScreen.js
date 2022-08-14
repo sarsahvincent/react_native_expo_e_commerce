@@ -29,7 +29,7 @@ const shoppingInputs = [
     type: "text",
   },
 ];
-const ShoppingScreen = () => {
+const ShoppingScreen = ({ navigation }) => {
   return (
     <Box flex={1} safeAreaTop bg={Colors.main} py={5}>
       {/* Header */}
@@ -68,7 +68,12 @@ const ShoppingScreen = () => {
                 />
               </FormControl>
             ))}
-            <CustomButton bg={Colors.main} color={Colors.white} mt={5}>
+            <CustomButton
+              onPress={() => navigation.navigate("Checkout")}
+              bg={Colors.main}
+              color={Colors.white}
+              mt={5}
+            >
               CONTINUE
             </CustomButton>
           </VStack>

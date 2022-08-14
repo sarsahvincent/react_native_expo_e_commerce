@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import { Center, Modal, HStack, VStack, Text, Button } from "native-base";
 import React, { useState } from "react";
 import CustomButton from "../Components/CustomButton";
@@ -26,6 +27,7 @@ const OrdersInfo = [
   },
 ];
 const PlaceOrderModal = () => {
+  const navigation = useNavigation();
   const [showModal, setShowModal] = useState(false);
   return (
     <Center>
@@ -72,10 +74,13 @@ const PlaceOrderModal = () => {
           </Modal.Body>
           <Modal.Footer>
             <Button
+              onPress={() => {
+                navigation.navigate("Order");
+                setShowModal(false);
+              }}
               flex={1}
               bg={Colors.main}
               h={45}
-              onPress={() => setShowModal(false)}
               _pressed={{
                 bg: Colors.main,
               }}

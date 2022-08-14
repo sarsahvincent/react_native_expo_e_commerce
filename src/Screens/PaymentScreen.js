@@ -34,7 +34,7 @@ const paymentMethods = [
     icon: "FontAwesome",
   },
 ];
-const PaymentScreen = () => {
+const PaymentScreen = ({ navigation }) => {
   return (
     <Box flex={1} safeAreaTop bg={Colors.main} py={5}>
       {/* Header */}
@@ -81,7 +81,12 @@ const PaymentScreen = () => {
                 )}
               </HStack>
             ))}
-            <CustomButton bg={Colors.main} color={Colors.white} mt={5}>
+            <CustomButton
+              onPress={() => navigation.navigate("Placeorder")}
+              bg={Colors.main}
+              color={Colors.white}
+              mt={5}
+            >
               CONTINUE
             </CustomButton>
             <Text italic textAlign="center">

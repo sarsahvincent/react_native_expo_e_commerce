@@ -5,7 +5,7 @@ import CartEmpty from "../Components/CartEmpty";
 import CartItems from "../Components/CartItems";
 import CustomButton from "../Components/CustomButton";
 
-const CartScreen = () => {
+const CartScreen = ({ navigation }) => {
   return (
     <Box safeAreaTop flex={1} bg={Colors.subYellow} py={5}>
       <Center w="full" py={5}>
@@ -45,7 +45,12 @@ const CartScreen = () => {
         </Center>
         {/* Checkout button*/}
         <Center px={5}>
-          <CustomButton bg={Colors.black} color={Colors.white} mt={10}>
+          <CustomButton
+            bg={Colors.black}
+            color={Colors.white}
+            mt={10}
+            onPress={() => navigation.navigate("Shipping")}
+          >
             CHECKOUT
           </CustomButton>
         </Center>
