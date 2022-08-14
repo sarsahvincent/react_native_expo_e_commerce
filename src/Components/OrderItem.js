@@ -9,7 +9,7 @@ import {
   Pressable,
   VStack,
   Text,
-  Button
+  Button,
 } from "native-base";
 import { products } from "../data/Products";
 
@@ -57,6 +57,7 @@ const OrderItem = () => {
 
   return (
     <FlatList
+      showsVerticalScrollIndicator={false}
       data={products.slice(0, 3)}
       renderItem={renderItem}
       keyExtractor={(item) => item.id}

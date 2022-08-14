@@ -40,11 +40,11 @@ const Profile = () => {
                 type={item.type}
                 borderWidth={0.2}
                 borderColor={Colors.main}
-                bg={Colors.subYellow}
+                bg={Colors.subGray}
                 color={Colors.main}
                 fontSize={15}
                 _focus={{
-                  bg: Colors.subYellow,
+                  bg: Colors.subGray,
                   borderWidth: 1,
                   borderColor: Colors.main,
                 }}

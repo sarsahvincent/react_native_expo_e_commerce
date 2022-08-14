@@ -6,7 +6,7 @@ import Colors from "../data/colors";
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <Box flex={1} F bg={Colors.subYellow}>
+    <Box flex={1} F bg={Colors.subGray}>
       <HomeSearch navigation={navigation} />
       <HomeProducts navigation={navigation} />
     </Box>

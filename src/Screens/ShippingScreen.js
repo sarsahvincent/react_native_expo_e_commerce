@@ -57,11 +57,11 @@ const ShoppingScreen = ({ navigation }) => {
                   type={item.type}
                   borderWidth={0.2}
                   borderColor={Colors.main}
-                  bg={Colors.subYellow}
+                  bg={Colors.subGray}
                   py={4}
                   color={Colors.main}
                   _focus={{
-                    bg: Colors.subYellow,
+                    bg: Colors.subGray,
                     borderWidth: 1,
                     borderColor: Colors.main,
                   }}

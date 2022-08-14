@@ -8,7 +8,7 @@ import PlaceOrderModal from "../Components/PlaceOrderModal";
 
 const PlaceOrderScreen = () => {
   return (
-    <Box safeAreaTop bg={Colors.subYellow} flex={1} mb={5} pt={6}>
+    <Box safeAreaTop bg={Colors.subGray} flex={1} mb={5} pt={6}>
       <Box>
         <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
           <OrderInfo

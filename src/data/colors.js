@@ -6,7 +6,7 @@ const Colors = {
   orange: "#ffce31",
   grey: "#f4f4f4",
   red: "#ff0000",
-  subYellow: "#fff2e6",
+  subGray: "#ecf0f3",
   deepestYellow: "#ffe6cc",
   blue: "#3887f9",
   underline: "#e5e5e5",

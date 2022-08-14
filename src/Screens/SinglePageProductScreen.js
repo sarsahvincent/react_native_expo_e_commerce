@@ -18,7 +18,7 @@ const SinglePageProductScreen = ({ route, navigation }) => {
   const { product } = route.params;
   const [value, setValue] = useState(0);
   return (
-    <Box safeAreaTop flex={1} bg={Colors.white}>
+    <Box pt={2} safeAreaTop flex={1} bg={Colors.white}>
       <ScrollView px={5} showsVerticalScrollIndicator={false}>
         <Image
           source={{ uri: product.image }}

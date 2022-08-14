@@ -23,12 +23,12 @@ export default function Review() {
       </Heading>
       <Message
         color={Colors.main}
-        bg={Colors.subYellow}
+        bg={Colors.subGray}
         size={10}
         children="NO REVIEW"
         bold
       />
-      <Box p={3} bg={Colors.subYellow} mt={5} rounded={5}>
+      <Box p={3} bg={Colors.subGray} mt={5} rounded={5}>
         <Heading fontSize={15} color={Colors.black}>
           Vincen Sarsah
         </Heading>
@@ -58,13 +58,13 @@ export default function Review() {
               Reting
             </FormControl.Label>
             <Select
-              bg={Colors.subYellow}
+              bg={Colors.subGray}
               borderWidth={0}
               rounded={5}
               py={3}
               placeholder="Choose Rate"
               _selectedItem={{
-                bg: Colors.subYellow,
+                bg: Colors.subGray,
                 endIcon: <CheckIcon size={2} />,
               }}
               selectedValue={rating}
@@ -90,9 +90,9 @@ export default function Review() {
               w="full"
               placeholder="This product is good ..."
               borderWidth={0}
-              bg={Colors.subYellow}
+              bg={Colors.subGray}
               py={4}
-              _focus={{ bg: Colors.subYellow }}
+              _focus={{ bg: Colors.subGray }}
             />
           </FormControl>
           <CustomButton bg={Colors.main} color={Colors.white}>

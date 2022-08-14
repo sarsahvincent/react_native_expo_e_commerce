@@ -7,7 +7,7 @@ import CustomButton from "../Components/CustomButton";
 
 const CartScreen = ({ navigation }) => {
   return (
-    <Box safeAreaTop flex={1} bg={Colors.subYellow} py={5}>
+    <Box safeAreaTop flex={1} bg={Colors.subGray} py={5}>
       <Center w="full" py={5}>
         <Text color={Colors.black} fontSize={20} bold>
           Cart
