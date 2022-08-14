@@ -1,4 +1,3 @@
-import { StyleSheet } from "react-native";
 import {
   Text,
   Image,
@@ -11,10 +10,9 @@ import {
 } from "native-base";
 import React from "react";
 import Colors from "../data/colors";
-import { MaterialIcons } from "@expo/vector-icons";
-import { Ionicons } from "@expo/vector-icons";
+import { MaterialIcons, Ionicons } from "@expo/vector-icons";
 
-const LoginScreen = () => {
+const LoginScreen = ({ navigation }) => {
   return (
     <Box flex={1} bg={Colors.white}>
       <Image
@@ -57,10 +55,19 @@ const LoginScreen = () => {
             borderBottomColor={Colors.underline}
           />
         </VStack>
-        <Button rounded={50} my={30} w="40%" bg={Colors.main}>
+        <Button
+          _pressed={{
+            bg: Colors.main,
+          }}
+          onPress={() => navigation.navigate("Bottom")}
+          rounded={50}
+          my={30}
+          w="40%"
+          bg={Colors.main}
+        >
           Login
         </Button>
-        <Pressable mt='4'>
+        <Pressable onPress={() => navigation.navigate("Register")} mt="4">
           <Text color={Colors.deepestYellow}>Sign up</Text>
         </Pressable>
       </Box>
@@ -69,5 +76,3 @@ const LoginScreen = () => {
 };
 
 export default LoginScreen;
-
-const styles = StyleSheet.create({});

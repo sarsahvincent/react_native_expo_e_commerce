@@ -158,7 +158,7 @@ export const products = [
   },
   {
     id: 13,
-    countInstock: 3,
+    countInstock: 0,
     rating: 3,
     numReviews: 12,
     name: "Galaxy Note 10 Lorem ipsum dolor sit amet consectetur, adipisicing elit.",

@@ -14,50 +14,64 @@ import NumericInput from "react-native-numeric-input";
 import CustomButton from "../Components/CustomButton";
 import Review from "../Components/Review";
 
-const SinglePageProductScreen = () => {
+const SinglePageProductScreen = ({ route, navigation }) => {
+  const { product } = route.params;
+  console.log("product", product);
   const [value, setValue] = useState(0);
   return (
     <Box safeAreaTop flex={1} bg={Colors.white}>
       <ScrollView px={5} showsVerticalScrollIndicator={false}>
         <Image
-          source={require("../../assets/phone.jpg")}
+          source={{ uri: product.image }}
           alt="Image"
           w="full"
           h={300}
           resizeMode="contain"
         />
         <Heading bold fontSize={15} mb={2} lineHeight={22}>
-          New Phone from Chhina
+          {product.name}
         </Heading>
-        <ProductRating value={4.5} />
+        <ProductRating
+          value={product.rating}
+          text={`${product.numReviews} reviews`}
+        />
         <HStack space={2} alignItems="center" my={5}>
-          <NumericInput
-            onChange={(e) => setValue(e)}
-            value={value}
-            totalWidth={140}
-            totalHeight={30}
-            iconSize={25}
-            maxValue={15}
-            minValue={0}
-            textColor={Colors.black}
-            iconStyle={{ color: Colors.white }}
-            rightButtonBackgroundColor={Colors.main}
-            leftButtonBackgroundColor={Colors.main}
-          />
+          {product.countInstock > 0 ? (
+            <>
+              <NumericInput
+                onChange={(e) => setValue(e)}
+                value={value}
+                totalWidth={140}
+                totalHeight={30}
+                iconSize={25}
+                maxValue={product.countInstock}
+                minValue={0}
+                textColor={Colors.black}
+                iconStyle={{ color: Colors.white }}
+                rightButtonBackgroundColor={Colors.main}
+                leftButtonBackgroundColor={Colors.main}
+              />
+            </>
+          ) : (
+            <Heading bold color={Colors.red} italic fontSize={12}>
+              Out of Stock
+            </Heading>
+          )}
+
           <Spacer />
           <Heading bold color={Colors.black} fontSize={19}>
-            $400
+            ${product.price}
           </Heading>
         </HStack>
         <Text lineHeight={24} fontSize={12}>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum eaque
-          eius tenetur reprehenderit repudiandae. Similique maxime debitis,
-          delectus non, expedita soluta nulla asperiores sapiente vero quis
-          recusandae repellendus? Numquam facilis debitis officia ad iure
-          aspernatur accusantium est labore eaque dolorum consectetur ea
-          mollitia, ipsam corporis repudiandae quidem dicta ullam magnam. Autem
+          {product.description}
         </Text>
-        <CustomButton bg={Colors.main} color={Colors.white} mt={10}>
+        <CustomButton
+          bg={Colors.main}
+          color={Colors.white}
+          mt={10}
+          onPress={() => navigation.navigate("Cart")}
+        >
           ADD TO CART
         </CustomButton>
         <Review />

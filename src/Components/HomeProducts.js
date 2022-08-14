@@ -7,28 +7,11 @@ import {
   Image,
   Box,
 } from "native-base";
-import React, { useEffect, useState } from "react";
 import { products } from "../data/Products";
 import Colors from "../data/colors";
 import ProductRating from "./ProductRating";
 
-function HomeProducts() {
-  // const [products, setProducts] = useState([]);
-  // useEffect(() => {
-  //   async function getProducts() {
-  //     try {
-  //       const response = await axios.get(
-  //         "https://reactreduxshoppingcartbackend.herokuapp.com/products"
-  //       );
-  //       console.log(response.data);
-  //       setProducts(response?.data);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   }
-  //   getProducts();
-  // }, []);
-
+function HomeProducts({ navigation }) {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <Flex
@@ -39,6 +22,11 @@ function HomeProducts() {
       >
         {products.map((product) => (
           <Pressable
+            onPress={() =>
+              navigation.navigate("Single", {
+                product,
+              })
+            }
             key={product.id}
             w="30%"
             bg={Colors.white}

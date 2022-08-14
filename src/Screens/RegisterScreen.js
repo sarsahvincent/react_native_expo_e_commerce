@@ -11,9 +11,9 @@ import {
 } from "native-base";
 import React from "react";
 import Colors from "../data/colors";
-import { MaterialIcons, Ionicons,FontAwesome } from "@expo/vector-icons";
+import { MaterialIcons, Ionicons, FontAwesome } from "@expo/vector-icons";
 
-const RegisterScreen = () => {
+const RegisterScreen = ({ navigation }) => {
   return (
     <Box flex={1} bg={Colors.white}>
       <Image
@@ -66,10 +66,16 @@ const RegisterScreen = () => {
             borderBottomColor={Colors.underline}
           />
         </VStack>
-        <Button rounded={50} my={30} w="40%" bg={Colors.main}>
+        <Button
+          onPress={() => navigation.navigate("Bottom")}
+          rounded={50}
+          my={30}
+          w="40%"
+          bg={Colors.main}
+        >
           SIGN UP
         </Button>
-        <Pressable mt="4">
+        <Pressable onPress={() => navigation.navigate("Login")} mt="4">
           <Text color={Colors.deepestYellow}>LOGIN</Text>
         </Pressable>
       </Box>
