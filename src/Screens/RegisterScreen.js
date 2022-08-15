@@ -1,10 +1,4 @@
-import {
-  KeyboardAvoidingView,
-  StyleSheet,
-  Platform,
-  TouchableWithoutFeedback,
-  Keyboard,
-} from "react-native";
+import { StyleSheet, TouchableWithoutFeedback, Keyboard } from "react-native";
 import {
   Text,
   Image,
